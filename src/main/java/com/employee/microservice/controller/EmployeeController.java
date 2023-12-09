@@ -28,6 +28,7 @@ public class EmployeeController {
 	@GetMapping("/employee")
 	public Map<String,Object> getEmployee()
 	{
+		System.out.println("getDeatails");
 		Map<String,Object> getEmployeeDetails=employeeService.getEmployeeeDetails();
 		return getEmployeeDetails;
 	}
